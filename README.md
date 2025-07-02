@@ -30,8 +30,8 @@ Built with React, TailwindCSS, and Node.js.
 
 ### admin source
 
-Email/username: admin
+Email/username: superadmin
 
 
-Password: admin3421
+Password: superadmin
 
