@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // Optional: For a hamburger menu icon
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
@@ -133,59 +133,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// import { Link } from "react-router-dom";
-// import { useAuth } from "../context/AuthContext";
-
-// const Navbar = () => {
-//   const { user, logout } = useAuth();
-
-//   return (
-//     <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center">
-//       <div className="flex items-center space-x-6">
-//         <Link to="/" className="font-bold text-lg hover:underline">
-//           QuizApp
-//         </Link>
-//         {user && (
-//           <Link to="/dashboard" className="hover:underline">
-//             Dashboard
-//           </Link>
-//         )}
-//         {user?.role === "admin" && (
-//           <Link to="/admin" className="hover:underline">
-//             Admin Panel
-//           </Link>
-//         )}
-//         {user && (
-//           <Link to="/scoreboard" className="hover:underline">
-//             Leaderboard
-//           </Link>
-//         )}
-//       </div>
-//       <div>
-//         {user ? (
-//           <>
-//             <span className="mr-4 font-semibold">{user.username}</span>
-//             <button
-//               onClick={logout}
-//               className="bg-red-500 px-3 py-1 rounded hover:bg-red-600 transition"
-//             >
-//               Logout
-//             </button>
-//           </>
-//         ) : (
-//           <>
-//             <Link to="/login" className="mr-4 hover:underline">
-//               Login
-//             </Link>
-//             <Link to="/register" className="hover:underline">
-//               Register
-//             </Link>
-//           </>
-//         )}
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;

@@ -7,7 +7,7 @@ const Exam = () => {
   const navigate = useNavigate();
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
-  const [timeLeft, setTimeLeft] = useState(600); // 10 minutes in seconds
+  const [timeLeft, setTimeLeft] = useState(600);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -42,7 +42,6 @@ const Exam = () => {
     }
   };
 
-  // Format time mm:ss
   const formatTime = (secs) => {
     const m = Math.floor(secs / 60)
       .toString()

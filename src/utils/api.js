@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const API = axios.create({
-    baseURL: 'https://quiz-server-2hmi.onrender.com', // your backend base URL
+    baseURL: 'https://quiz-server-2hmi.onrender.com',
 })
 
 API.interceptors.request.use((config) => {

@@ -7,7 +7,6 @@ const Dashboard = () => {
   const { user } = useAuth();
   const [exams, setExams] = useState([]);
 
-  // Hardcoded exams as example, you can extend backend for multiple exams
   useEffect(() => {
     setExams([
       { id: 1, name: "EXAM-1-Basic" },

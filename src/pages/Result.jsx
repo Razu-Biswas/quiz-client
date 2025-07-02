@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 const Result = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const result = location.state; // array of { question, correct, correctAnswer }
+  const result = location.state;
 
   if (!result || !Array.isArray(result)) {
     return (

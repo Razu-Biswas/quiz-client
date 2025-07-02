@@ -11,7 +11,7 @@ const Login = () => {
     formState: { errors },
   } = useForm();
   const [loading, setLoading] = useState(false);
-  const [isRegister, setIsRegister] = useState(false); // Toggle state
+  const [isRegister, setIsRegister] = useState(false);
 
   const onSubmit = async (data) => {
     try {
