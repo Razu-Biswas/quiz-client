@@ -26,3 +26,8 @@ Built with React, TailwindCSS, and Node.js.
 ✅ Delete Quizzes
 
 ✅ Full Control over Quiz Database
+
+
+### admin source
+Email/username: admin
+Password: admin3421
